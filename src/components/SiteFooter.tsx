@@ -7,10 +7,10 @@ export default function SiteFooter() {
         </p>
         <p>
           <a
-            href="mailto:hello@studioatelier.example"
+            href="mailto:luxin_zhong@hotmail.com"
             className="transition-colors hover:text-foreground"
           >
-            hello@studioatelier.example
+            luxin_zhong@hotmail.com
           </a>
         </p>
         <p>© {new Date().getFullYear()} Studio Atelier. All rights reserved.</p>
