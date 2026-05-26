@@ -4,121 +4,121 @@ export type Project = {
   year: number;
   location: string;
   category: string;
-  /** One-line summary shown on cards and as the detail-page lede. */
   summary: string;
-  /** Full description paragraphs for the project detail page. */
   description: string[];
   client: string;
   status: string;
-  area: string;
-  /** Tailwind gradient classes used as a placeholder image. */
-  gradient: string;
+  images: string[];
 };
 
-// Placeholder content — swap titles, copy, and (eventually) real photography
-// as the portfolio fills out. Each project gets its own static detail page.
 export const projects: Project[] = [
   {
-    slug: "riverside-pavilion",
-    title: "Riverside Pavilion",
-    year: 2024,
-    location: "Porto, Portugal",
-    category: "Cultural",
-    summary:
-      "A timber-framed events pavilion that folds open toward the Douro waterfront.",
-    description: [
-      "Riverside Pavilion sits at the threshold between the city and the river, a lightweight timber structure that opens its full southern face to the water in summer and closes into a warm, lantern-lit room in winter.",
-      "The roof is a single folded plane of cross-laminated timber, carried on slender steel columns that step back from the glazing line to keep the river view uninterrupted. Operable shutters tune daylight and air through the day.",
-    ],
-    client: "Câmara Municipal do Porto",
-    status: "Completed",
-    area: "1,240 m²",
-    gradient: "from-amber-200 via-orange-300 to-rose-400",
-  },
-  {
-    slug: "helix-tower",
-    title: "Helix Tower",
+    slug: "the-knot",
+    title: "The Knot",
     year: 2023,
-    location: "Rotterdam, Netherlands",
-    category: "Mixed-use",
+    location: "New York City, USA",
+    category: "Computational Prefabrication",
     summary:
-      "A 28-storey mixed-use tower whose terraces spiral up a planted core.",
+      "A concrete museum exploring cross-influences between structural efficiency, digital fabrication, and form-finding through modular 3D-printed prefabricated systems.",
     description: [
-      "Helix Tower stacks retail, workspace, and housing around a continuous planted spiral that doubles as the building's vertical circulation and its public garden.",
-      "Each residential floor is offset a few degrees from the one below, producing generous outdoor terraces and a faceted facade that catches changing light across the harbour.",
+      "The Knot explores the possibilities of cross-influences and decision-making through a series of experiments with construction method, structural efficiency, digital simulation tools, form-finding, and spatial qualities.",
+      "The project uses a single continuous surface to cast concrete, eliminating conventional formwork waste. Carbon-absorbing concrete and modular slab systems — developed through Python and Grasshopper scripts — are assembled on site from prefabricated units, compressing build time and reducing construction waste.",
+      "Structural floor geometry was derived from finite element analysis: stress lines extracted from simulation become the reinforcement curves, and the resulting form surpasses a conventional flat slab in performance while using significantly less material.",
+      "Radiant heating and cooling is embedded in the floor structure, with services running through tubes to tie the modular floor units together. Climate studies comparing single- and double-atrium configurations informed the final thermal strategy.",
     ],
-    client: "Maaskant Development",
-    status: "Under construction",
-    area: "34,500 m²",
-    gradient: "from-sky-300 via-indigo-400 to-violet-500",
+    client: "Structural Design Research Studio — Masoud Akbarzadeh + Yao Lu",
+    status: "Academic — SP 2023",
+    images: [
+      "/images/projects/the-knot/cover.jpg",
+      "/images/projects/the-knot/01.jpg",
+      "/images/projects/the-knot/02.jpg",
+      "/images/projects/the-knot/03.jpg",
+    ],
   },
   {
-    slug: "courtyard-house",
-    title: "Courtyard House",
+    slug: "light-kit-house",
+    title: "Light-Kit House",
+    year: 2023,
+    location: "Dubai, United Arab Emirates",
+    category: "Computational Prefabrication",
+    summary:
+      "A prefabricated residential prototype for the UAE that uses lightweight vaulted floor structures, carbon-absorbing concrete, and a configurable kit-of-parts system to reduce construction waste and energy use.",
+    description: [
+      "The Light-Kit House redefines sustainable living in the UAE through a lightweight floor structure, carbon-absorbing 3D-printed concrete, and a modular system of configurable parts. The design prioritizes energy efficiency through thermal mass, natural ventilation, and integrated water collection.",
+      "The building structure consists of prefabricated floors and column systems whose funicular geometry mirrors vaulted domes and ancient Middle Eastern architectural forms — reducing construction material by up to 50% compared to conventional flat-slab construction.",
+      "The 3D-printed PPAS screen facades allow air to permeate through a perforated geometry, controlling air permeability while filtering harsh desert sunlight. The lattice panels provide natural ventilation and create an intimate interior environment.",
+      "The ground floor is open for cross-ventilation. The second floor's 3D-printed lattice walls admit wind while rejecting solar heat gain. Structural savings propagate through the entire lateral and foundation system, significantly reducing the building's overall material footprint.",
+    ],
+    client: "Polyhedral Structures Lab, UPenn",
+    status: "Academic — FA 2023",
+    images: [
+      "/images/projects/light-kit-house/cover.jpg",
+      "/images/projects/light-kit-house/01.jpg",
+      "/images/projects/light-kit-house/02.jpg",
+      "/images/projects/light-kit-house/03.jpg",
+    ],
+  },
+  {
+    slug: "music-box",
+    title: "Music Box",
+    year: 2023,
+    location: "Philadelphia, USA",
+    category: "Modular Adaptive Reuse",
+    summary:
+      "An adaptive reuse of the American Bandstand Studio in Philadelphia as collective housing and a public music venue — rethinking how musicians live, collaborate, and share music with the surrounding community.",
+    description: [
+      "Music Box rethinks collective housing and historical adaptive reuse through the lens of music culture and community. The project transforms the American Bandstand Studio into a shared environment where musicians can live, collaborate, record, and perform — while making music accessible to the broader neighbourhood.",
+      "The original building structure and its famous entrance were preserved. Interior walls were selectively removed to accommodate classrooms, recording rooms, and a central performance stage. New modular housing units are inserted above the plaza, offering affordable communal living with direct views of the stage below.",
+      "Musicians form bands, collaborate on writing and production in shared studios, then distribute their music using a restored Arturia satellite dish — broadcasting performances to audiences nationally while performing locally. The historic satellite becomes both infrastructure and civic symbol.",
+      "The sectional strategy stacks public, collaborative, and private programs vertically: the stage and open plaza at ground level draw the neighbourhood in; recording and practice studios occupy the middle levels; residential units at the top offer quiet above the activity below.",
+    ],
+    client: "Housing Studio — Scott Erby",
+    status: "Academic — SP 2023",
+    images: [
+      "/images/projects/music-box/cover.jpg",
+      "/images/projects/music-box/01.jpg",
+      "/images/projects/music-box/02.jpg",
+      "/images/projects/music-box/03.jpg",
+    ],
+  },
+  {
+    slug: "where-is-the-light",
+    title: "Where is the Light?",
     year: 2022,
-    location: "Kyoto, Japan",
-    category: "Residential",
+    location: "Philadelphia, USA",
+    category: "Computational Tool",
     summary:
-      "A private residence organised around three quiet, planted courtyards.",
+      "A Grasshopper plugin that generates instant artificial lighting guidance for architectural spaces — giving designers an immediate spatial sense of light distribution without leaving their modelling environment.",
     description: [
-      "Courtyard House turns inward, away from a dense street, organising daily life around three courtyards: one of gravel, one of moss, and one of water.",
-      "Deep eaves and shoji-inspired sliding screens dissolve the line between inside and out, so the seasons move through the house as much as around it.",
+      "Lighting Generator is a Grasshopper plugin that creates a quick guiding solution for generating artificial lighting ranges in both design development and architectural design.",
+      "The tool translates luminaire data and room geometry into spatial light maps, allowing designers to test configurations early in the process without leaving their 3D modelling environment. Heat-map outputs and photometric diagrams update parametrically as geometry changes.",
     ],
-    client: "Private",
-    status: "Completed",
-    area: "320 m²",
-    gradient: "from-emerald-200 via-teal-300 to-cyan-400",
+    client: "Academic Research",
+    status: "Research Tool — SP 2022",
+    images: [
+      "/images/projects/where-is-the-light/cover.jpg",
+      "/images/projects/where-is-the-light/01.jpg",
+      "/images/projects/where-is-the-light/02.jpg",
+    ],
   },
   {
-    slug: "civic-library",
-    title: "Civic Library",
+    slug: "parametric-lca",
+    title: "Parametric Building LCA",
     year: 2023,
-    location: "Aarhus, Denmark",
-    category: "Public",
+    location: "Philadelphia, USA",
+    category: "Computational Analysis",
     summary:
-      "A daylit civic library with a stepped reading landscape under a timber roof.",
+      "A parametric lifecycle assessment of Amy Gutmann Hall at UPenn — Penn's largest building — using BHoM to quantify its embodied carbon and operational energy impact.",
     description: [
-      "Civic Library replaces a single grand reading room with a stepped interior landscape — a continuous terrain of shelves, stairs, and window seats that invites visitors to find their own corner.",
-      "A coffered timber roof floats above, perforated by skylights that wash the stacks in even northern daylight throughout the long Nordic year.",
+      "This project analysed the building lifecycle and carbon impact of the newly constructed Amy Gutmann Hall, the University of Pennsylvania's largest and most ambitious structure, using BHoM and other research resources.",
+      "The parametric model links building geometry to material quantities and carbon factors, enabling rapid what-if comparisons across structural systems and envelope assemblies. Results are visualised through interactive charts and building diagrams to support design decision-making at scale.",
     ],
-    client: "Aarhus Kommune",
-    status: "Completed",
-    area: "8,900 m²",
-    gradient: "from-stone-300 via-amber-300 to-yellow-400",
-  },
-  {
-    slug: "vineyard-winery",
-    title: "Vineyard Winery",
-    year: 2021,
-    location: "Mendoza, Argentina",
-    category: "Commercial",
-    summary:
-      "A rammed-earth winery set low into the slope beneath the Andes.",
-    description: [
-      "Vineyard Winery is built from the earth it sits on — thick rammed-earth walls regulate temperature for the cellars below while anchoring the building to its terraced site.",
-      "The tasting room cantilevers out toward the mountains, a single horizontal line of glass framing the vineyard rows and the snow-capped Andes beyond.",
+    client: "Academic Research",
+    status: "Research — SP 2023",
+    images: [
+      "/images/projects/parametric-lca/cover.jpg",
+      "/images/projects/parametric-lca/01.jpg",
     ],
-    client: "Bodega del Valle",
-    status: "Completed",
-    area: "2,750 m²",
-    gradient: "from-rose-300 via-red-400 to-amber-500",
-  },
-  {
-    slug: "coastal-retreat",
-    title: "Coastal Retreat",
-    year: 2024,
-    location: "Big Sur, USA",
-    category: "Residential",
-    summary:
-      "A weathering-steel retreat braced against the cliffs above the Pacific.",
-    description: [
-      "Coastal Retreat is a pair of weathering-steel volumes pinned to a coastal bluff, sheltering a glazed living space between them from the prevailing wind.",
-      "The material palette is deliberately spare — steel, board-formed concrete, and oiled cedar — left to age and streak with the salt air over time.",
-    ],
-    client: "Private",
-    status: "In design",
-    area: "410 m²",
-    gradient: "from-slate-300 via-blue-400 to-indigo-500",
   },
 ];
 

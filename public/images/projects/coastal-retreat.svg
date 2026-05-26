@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a0aeb8"/>
+      <stop offset="45%" stop-color="#bec8d0"/>
+      <stop offset="100%" stop-color="#d0d8dc"/>
+    </linearGradient>
+    <linearGradient id="ocean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7e9098"/>
+      <stop offset="100%" stop-color="#647480"/>
+    </linearGradient>
+    <linearGradient id="cliff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a827a"/>
+      <stop offset="100%" stop-color="#6c645e"/>
+    </linearGradient>
+    <linearGradient id="steel1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#504c48"/>
+      <stop offset="100%" stop-color="#645e58"/>
+    </linearGradient>
+    <linearGradient id="steel2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4c4844"/>
+      <stop offset="100%" stop-color="#605c56"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <!-- Ocean -->
+  <rect y="596" width="1600" height="304" fill="url(#ocean)"/>
+  <line x1="0" y1="596" x2="1600" y2="596" stroke="#708488" stroke-width="1.5"/>
+  <!-- Ocean wave lines -->
+  <line x1="0" y1="618" x2="1600" y2="618" stroke="#96a8b0" stroke-width="0.8" opacity="0.38"/>
+  <line x1="0" y1="646" x2="1600" y2="646" stroke="#96a8b0" stroke-width="0.7" opacity="0.30"/>
+  <line x1="0" y1="680" x2="1600" y2="680" stroke="#96a8b0" stroke-width="0.6" opacity="0.24"/>
+  <line x1="0" y1="722" x2="1600" y2="722" stroke="#96a8b0" stroke-width="0.5" opacity="0.18"/>
+  <!-- Fog/mist band at horizon -->
+  <rect x="0" y="584" width="1600" height="24" fill="#c8d0d6" fill-opacity="0.18"/>
+  <!-- Left cliff face -->
+  <polygon points="0,596 0,900 440,900 440,530 320,510 120,558" fill="url(#cliff)"/>
+  <!-- Left cliff texture -->
+  <line x1="60" y1="572" x2="60" y2="900" stroke="#746e66" stroke-width="1.2" opacity="0.28"/>
+  <line x1="160" y1="548" x2="160" y2="900" stroke="#746e66" stroke-width="1.2" opacity="0.28"/>
+  <line x1="260" y1="530" x2="260" y2="900" stroke="#746e66" stroke-width="1.2" opacity="0.28"/>
+  <line x1="360" y1="528" x2="360" y2="900" stroke="#746e66" stroke-width="1.2" opacity="0.22"/>
+  <!-- Right cliff face -->
+  <polygon points="1160,510 1340,490 1600,556 1600,900 1160,900" fill="url(#cliff)" opacity="0.88"/>
+  <line x1="1240" y1="512" x2="1240" y2="900" stroke="#746e66" stroke-width="1.2" opacity="0.28"/>
+  <line x1="1380" y1="496" x2="1380" y2="900" stroke="#746e66" stroke-width="1.2" opacity="0.28"/>
+  <line x1="1510" y1="556" x2="1510" y2="900" stroke="#746e66" stroke-width="1.2" opacity="0.22"/>
+  <!-- Platform the buildings sit on -->
+  <rect x="438" y="590" width="724" height="14" fill="#3a3430"/>
+  <rect x="438" y="602" width="724" height="24" fill="#8a827a"/>
+  <!-- Volume 1 (left steel box) -->
+  <rect x="440" y="368" width="296" height="226" fill="url(#steel1)"/>
+  <!-- Weathering steel rust tint -->
+  <rect x="440" y="368" width="296" height="226" fill="#6e3820" fill-opacity="0.14"/>
+  <!-- Volume 1 roof -->
+  <rect x="433" y="356" width="310" height="16" fill="#2c2824"/>
+  <!-- Volume 1 south glass wall -->
+  <rect x="440" y="380" width="64" height="206" fill="#beccce" fill-opacity="0.48" stroke="#8898a0" stroke-width="1"/>
+  <!-- Volume 1 horizontal window strip -->
+  <rect x="440" y="436" width="296" height="44" fill="#beccce" fill-opacity="0.30" stroke="#8898a0" stroke-width="0.8"/>
+  <!-- Volume 2 (right steel box, slightly set back) -->
+  <rect x="864" y="388" width="296" height="206" fill="url(#steel2)"/>
+  <!-- Weathering steel rust tint -->
+  <rect x="864" y="388" width="296" height="206" fill="#6e3018" fill-opacity="0.14"/>
+  <!-- Volume 2 roof -->
+  <rect x="857" y="376" width="310" height="16" fill="#2c2824"/>
+  <!-- Volume 2 east glass wall -->
+  <rect x="1096" y="398" width="64" height="188" fill="#beccce" fill-opacity="0.42" stroke="#8898a0" stroke-width="1"/>
+  <!-- Volume 2 horizontal window strip -->
+  <rect x="864" y="450" width="296" height="44" fill="#beccce" fill-opacity="0.28" stroke="#8898a0" stroke-width="0.8"/>
+  <!-- Glazed link between volumes -->
+  <rect x="736" y="406" width="128" height="178" fill="#c4d4d8" fill-opacity="0.38" stroke="#8898a0" stroke-width="0.8"/>
+  <!-- Link mullions -->
+  <line x1="772" y1="406" x2="772" y2="584" stroke="#8898a0" stroke-width="0.8" opacity="0.5"/>
+  <line x1="808" y1="406" x2="808" y2="584" stroke="#8898a0" stroke-width="0.5" opacity="0.4"/>
+  <line x1="844" y1="406" x2="844" y2="584" stroke="#8898a0" stroke-width="0.8" opacity="0.5"/>
+</svg>

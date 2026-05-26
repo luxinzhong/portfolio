@@ -1,18 +1,26 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — Studio Atelier",
+  title: "About — Lucy Zhong",
   description:
-    "Studio Atelier is an architecture practice working across cultural, residential, and civic projects.",
+    "Architecture portfolio of Lucy Zhong, working across cultural, residential, and civic projects.",
 };
 
-const services = [
-  "Architecture",
-  "Urban design",
-  "Interiors",
-  "Adaptive reuse",
-  "Feasibility studies",
-  "Competition design",
+const timeline = [
+  { period: "2024 – Present", role: "Designer II", place: "Andrew Sidford Architects" },
+  { period: "2023 – 2024", role: "Research Assistant", place: "Polyhedral Structures Lab, UPenn" },
+  { period: "2022", role: "Summer Intern", place: "BLTa — A Perkins Eastman Studio" },
+  { period: "2021 – 2024", role: "M.Arch", place: "University of Pennsylvania" },
+  { period: "2017 – 2021", role: "B.A. Architectural Design", place: "University of Washington" },
+];
+
+const skills = [
+  { category: "Modeling", tools: ["Rhino 3D", "Revit", "AutoCAD", "SketchUp", "Blender", "Zbrush"] },
+  { category: "Rendering", tools: ["Vray", "Lumion", "Enscape", "Twinmotion", "Keyshot"] },
+  { category: "Scripting", tools: ["Grasshopper", "Python", "HTML + CSS"] },
+  { category: "Analysis", tools: ["Ladybug", "BHoM", "Fusion 360"] },
+  { category: "Graphic", tools: ["Photoshop", "Illustrator", "InDesign"] },
+  { category: "Video", tools: ["Premiere", "After Effects"] },
 ];
 
 export default function About() {
@@ -22,39 +30,51 @@ export default function About() {
         About
       </p>
       <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-        A small studio with a long view.
+        Lucy Zhong
       </h1>
 
-      <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3">
-        <div className="space-y-6 text-lg leading-8 text-zinc-600 md:col-span-2 dark:text-zinc-400">
-          <p>
-            Studio Atelier is an architecture and urbanism practice. We work at
-            the scale of a room and the scale of a city block, and we believe
-            the two are always related.
-          </p>
-          <p>
-            Each project begins with the specifics of its place — light,
-            climate, ground, and the people who will use it — and grows from
-            there. We favour durable materials, generous daylight, and plans
-            that age gracefully.
-          </p>
-          <p>
-            This is a placeholder biography. Replace it with the studio&apos;s
-            real story, team, awards, and press.
-          </p>
-        </div>
-
-        <div>
-          <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500">
-            Services
-          </h2>
-          <ul className="mt-4 space-y-2 text-zinc-700 dark:text-zinc-300">
-            {services.map((service) => (
-              <li key={service}>{service}</li>
-            ))}
-          </ul>
+      {/* Timeline */}
+      <div className="mt-16">
+        <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-400">
+          Timeline
+        </h2>
+        <div className="mt-4">
+          {timeline.map((entry, i) => (
+            <div
+              key={i}
+              className="grid grid-cols-1 gap-y-0.5 border-t border-black/10 py-5 sm:grid-cols-[11rem_1fr_1fr] sm:gap-y-0 dark:border-white/10"
+            >
+              <span className="text-sm text-zinc-400">{entry.period}</span>
+              <span className="text-sm font-medium">{entry.role}</span>
+              <span className="text-sm text-zinc-500">{entry.place}</span>
+            </div>
+          ))}
+          <div className="border-t border-black/10 dark:border-white/10" />
         </div>
       </div>
+
+      {/* Skills */}
+      <div className="mt-16">
+        <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-400">
+          Skills
+        </h2>
+        <div className="mt-4 grid grid-cols-2 gap-x-8 gap-y-8 sm:grid-cols-3">
+          {skills.map((s) => (
+            <div key={s.category}>
+              <h3 className="text-xs font-medium uppercase tracking-[0.15em] text-zinc-500">
+                {s.category}
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+                {s.tools.join(", ")}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <p className="mt-16 text-sm text-zinc-400 dark:text-zinc-500">
+        Last updated May 2026.
+      </p>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/", label: "Work" },
+  { href: "/work", label: "Work" },
   { href: "/about", label: "About" },
 ];
 
@@ -13,7 +13,7 @@ export default function SiteHeader() {
           href="/"
           className="text-sm font-semibold uppercase tracking-[0.2em]"
         >
-          Studio Atelier
+          Lucy Zhong
         </Link>
         <nav className="flex gap-8 text-sm">
           {navLinks.map((link) => (
