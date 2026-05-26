@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { imgSrc } from "@/lib/imgSrc";
 
 const images = [
   { src: "/images/projects/the-knot/cover.jpg", alt: "The Knot" },
@@ -19,7 +20,7 @@ export default function HeroImage() {
   return (
     <div className="relative w-full overflow-hidden" style={{ height: "100svh" }}>
       <Image
-        src={image.src}
+        src={imgSrc(image.src)}
         alt={image.alt}
         fill
         className="object-cover"
