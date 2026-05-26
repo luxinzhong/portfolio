@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c4d0da"/>
+      <stop offset="100%" stop-color="#dce6ec"/>
+    </linearGradient>
+    <linearGradient id="tower" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#44403c"/>
+      <stop offset="55%" stop-color="#585450"/>
+      <stop offset="100%" stop-color="#74706c"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6a6864"/>
+      <stop offset="100%" stop-color="#7a7874"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <!-- Background city silhouette -->
+  <rect x="0" y="490" width="280" height="410" fill="#b0b8c0" opacity="0.45"/>
+  <rect x="260" y="540" width="180" height="360" fill="#acb4bc" opacity="0.38"/>
+  <rect x="1100" y="470" width="240" height="430" fill="#b0b8c0" opacity="0.45"/>
+  <rect x="1320" y="510" width="280" height="390" fill="#acb4bc" opacity="0.38"/>
+  <rect x="440" y="620" width="140" height="280" fill="#b4bcc4" opacity="0.3"/>
+  <rect x="1020" y="640" width="120" height="260" fill="#b4bcc4" opacity="0.3"/>
+  <!-- Ground plane -->
+  <rect x="0" y="816" width="1600" height="84" fill="url(#ground)"/>
+  <rect x="0" y="806" width="1600" height="14" fill="#5a5854"/>
+  <!-- Tower podium -->
+  <rect x="620" y="790" width="360" height="20" fill="#3a3632"/>
+  <!-- Main tower core -->
+  <rect x="700" y="72" width="200" height="734" fill="url(#tower)"/>
+  <!-- Sky light reflection strip on tower face -->
+  <rect x="700" y="72" width="35" height="734" fill="#c4d0da" fill-opacity="0.08"/>
+  <!-- Floor plate slabs (offset at each level) -->
+  <rect x="678" y="112" width="244" height="16" fill="#302c28"/>
+  <rect x="688" y="172" width="234" height="16" fill="#302c28"/>
+  <rect x="672" y="232" width="250" height="16" fill="#302c28"/>
+  <rect x="682" y="292" width="240" height="16" fill="#302c28"/>
+  <rect x="676" y="352" width="246" height="16" fill="#302c28"/>
+  <rect x="686" y="412" width="236" height="16" fill="#302c28"/>
+  <rect x="678" y="472" width="244" height="16" fill="#302c28"/>
+  <rect x="688" y="532" width="234" height="16" fill="#302c28"/>
+  <rect x="674" y="592" width="248" height="16" fill="#302c28"/>
+  <rect x="684" y="652" width="238" height="16" fill="#302c28"/>
+  <rect x="678" y="712" width="244" height="16" fill="#302c28"/>
+  <!-- Glass between floors -->
+  <rect x="700" y="128" width="200" height="44" fill="#c4d4dc" fill-opacity="0.36" stroke="#8898a2" stroke-width="0.5"/>
+  <rect x="700" y="188" width="200" height="44" fill="#c4d4dc" fill-opacity="0.42" stroke="#8898a2" stroke-width="0.5"/>
+  <rect x="700" y="248" width="200" height="44" fill="#c4d4dc" fill-opacity="0.32" stroke="#8898a2" stroke-width="0.5"/>
+  <rect x="700" y="308" width="200" height="44" fill="#c4d4dc" fill-opacity="0.38" stroke="#8898a2" stroke-width="0.5"/>
+  <rect x="700" y="368" width="200" height="44" fill="#c4d4dc" fill-opacity="0.34" stroke="#8898a2" stroke-width="0.5"/>
+  <rect x="700" y="428" width="200" height="44" fill="#c4d4dc" fill-opacity="0.40" stroke="#8898a2" stroke-width="0.5"/>
+  <rect x="700" y="488" width="200" height="44" fill="#c4d4dc" fill-opacity="0.30" stroke="#8898a2" stroke-width="0.5"/>
+  <rect x="700" y="548" width="200" height="44" fill="#c4d4dc" fill-opacity="0.36" stroke="#8898a2" stroke-width="0.5"/>
+  <rect x="700" y="608" width="200" height="44" fill="#c4d4dc" fill-opacity="0.42" stroke="#8898a2" stroke-width="0.5"/>
+  <rect x="700" y="668" width="200" height="44" fill="#c4d4dc" fill-opacity="0.34" stroke="#8898a2" stroke-width="0.5"/>
+  <!-- Planted terrace hints -->
+  <ellipse cx="718" cy="112" rx="16" ry="9" fill="#7a8c70" opacity="0.65"/>
+  <ellipse cx="746" cy="110" rx="12" ry="7" fill="#8a9c80" opacity="0.5"/>
+  <ellipse cx="878" cy="232" rx="15" ry="8" fill="#7a8c70" opacity="0.65"/>
+  <ellipse cx="850" cy="230" rx="11" ry="7" fill="#8a9c80" opacity="0.5"/>
+  <ellipse cx="702" cy="352" rx="17" ry="9" fill="#7a8c70" opacity="0.65"/>
+  <ellipse cx="730" cy="350" rx="12" ry="7" fill="#8a9c80" opacity="0.5"/>
+  <ellipse cx="870" cy="472" rx="14" ry="8" fill="#7a8c70" opacity="0.65"/>
+  <ellipse cx="840" cy="470" rx="11" ry="6" fill="#8a9c80" opacity="0.5"/>
+  <!-- Tower crown -->
+  <rect x="710" y="60" width="180" height="16" fill="#242220"/>
+</svg>

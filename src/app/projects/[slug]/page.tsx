@@ -3,6 +3,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getProject, projects } from "@/data/projects";
+import { imgSrc } from "@/lib/imgSrc";
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -53,7 +54,7 @@ export default async function ProjectPage({ params }: { params: Params }) {
       {/* Hero image */}
       <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden bg-zinc-100 dark:bg-zinc-900">
         <Image
-          src={coverImage}
+          src={imgSrc(coverImage)}
           alt={project.title}
           fill
           className="object-cover"
@@ -103,7 +104,7 @@ export default async function ProjectPage({ params }: { params: Params }) {
               className="relative aspect-[16/9] w-full overflow-hidden bg-zinc-100 dark:bg-zinc-900"
             >
               <Image
-                src={src}
+                src={imgSrc(src)}
                 alt={`${project.title} — view ${i + 2}`}
                 fill
                 className="object-cover"
