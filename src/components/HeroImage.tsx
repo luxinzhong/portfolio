@@ -2,30 +2,66 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import Carousel from "@/components/Carousel";
 import { imgSrc } from "@/lib/imgSrc";
 
-const images = [
-  { src: "/images/projects/the-knot/cover.jpg", alt: "The Knot" },
-  { src: "/images/projects/light-kit-house/cover.jpg", alt: "Light-Kit House" },
-  { src: "/images/projects/music-box/cover.jpg", alt: "Music Box" },
+type HeroItem =
+  | { type: "image"; src: string; alt: string }
+  | { type: "carousel" };
+
+const armatureImages = [
+  "/images/projects/boning-chainmail/cover.jpg",
+  "/images/projects/boning-chainmail/07.jpg",
+  "/images/projects/boning-chainmail/08.jpg",
+  "/images/projects/boning-chainmail/09.jpg",
+];
+
+const items: HeroItem[] = [
+  { type: "image", src: "/images/projects/the-knot/cover.jpg", alt: "The Knot" },
+  { type: "image", src: "/images/projects/the-knot/01.jpg", alt: "The Knot" },
+  { type: "image", src: "/images/projects/the-knot/03.jpg", alt: "The Knot" },
+  { type: "image", src: "/images/projects/the-knot/04.jpg", alt: "The Knot" },
+  { type: "image", src: "/images/projects/light-kit-house/cover.jpg", alt: "Light-Kit House" },
+  { type: "carousel" },
 ];
 
 export default function HeroImage() {
-  const [image, setImage] = useState(images[0]);
+  const [item, setItem] = useState<HeroItem>(items[0]);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    setImage(images[Math.floor(Math.random() * images.length)]);
+    setItem(items[Math.floor(Math.random() * items.length)]);
+    setReady(true);
+    document.documentElement.style.overflow = "hidden";
+    return () => { document.documentElement.style.overflow = ""; };
   }, []);
 
   return (
-    <div className="relative w-full overflow-hidden" style={{ height: "100svh" }}>
-      <Image
-        src={imgSrc(image.src)}
-        alt={image.alt}
-        fill
-        className="object-cover"
-        unoptimized
-      />
+    <div className={`fixed inset-0 transition-opacity duration-500 ${ready ? "opacity-100" : "opacity-0"}`}>
+      {item.type === "carousel" ? (
+        <div className="h-full flex items-center">
+          <Carousel images={armatureImages} alt="Armature" />
+        </div>
+      ) : (
+        <Image
+          src={imgSrc(item.src)}
+          alt={item.alt}
+          fill
+          className="object-cover"
+          unoptimized
+          priority
+        />
+      )}
+      {/* Footer overlay */}
+      <div className={`absolute bottom-0 left-0 right-0 flex items-end justify-between px-6 py-6 text-sm ${item.type === "carousel" ? "text-zinc-500" : "text-white/80"}`}>
+        <a
+          href="mailto:luxin_zhong@hotmail.com"
+          className={`transition-colors ${item.type === "carousel" ? "hover:text-zinc-800" : "hover:text-white"}`}
+        >
+          luxin_zhong@hotmail.com
+        </a>
+        <span>© {new Date().getFullYear()} Lucy Zhong. All rights reserved.</span>
+      </div>
     </div>
   );
 }

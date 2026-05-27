@@ -9,6 +9,7 @@ export type Project = {
   client: string;
   status: string;
   images: string[];
+  carouselCount?: number;
 };
 
 export const projects: Project[] = [
@@ -33,6 +34,9 @@ export const projects: Project[] = [
       "/images/projects/the-knot/01.jpg",
       "/images/projects/the-knot/02.jpg",
       "/images/projects/the-knot/03.jpg",
+      "/images/projects/the-knot/04.jpg",
+      "/images/projects/the-knot/05.jpg",
+      "/images/projects/the-knot/06.jpg",
     ],
   },
   {
@@ -67,10 +71,10 @@ export const projects: Project[] = [
     summary:
       "An adaptive reuse of the American Bandstand Studio in Philadelphia as collective housing and a public music venue — rethinking how musicians live, collaborate, and share music with the surrounding community.",
     description: [
-      "Music Box rethinks collective housing and historical adaptive reuse through the lens of music culture and community. The project transforms the American Bandstand Studio into a shared environment where musicians can live, collaborate, record, and perform — while making music accessible to the broader neighbourhood.",
-      "The original building structure and its famous entrance were preserved. Interior walls were selectively removed to accommodate classrooms, recording rooms, and a central performance stage. New modular housing units are inserted above the plaza, offering affordable communal living with direct views of the stage below.",
-      "Musicians form bands, collaborate on writing and production in shared studios, then distribute their music using a restored Arturia satellite dish — broadcasting performances to audiences nationally while performing locally. The historic satellite becomes both infrastructure and civic symbol.",
-      "The sectional strategy stacks public, collaborative, and private programs vertically: the stage and open plaza at ground level draw the neighbourhood in; recording and practice studios occupy the middle levels; residential units at the top offer quiet above the activity below.",
+      "This project started by analyzing the music production process, from the spark of notes on fingertips to a finished album on the market, and understanding the members participating in this process. We hope to provide a communal environment for musicians to live and make music together while bringing in other music-related staff, producers, DJs, and entrepreneurs to help finish and spread the work.",
+      "After the musicians form bands, they will be able to live together temporarily in their clusters of units, where they can practice individually and jointly. After the collaborative practice and creation, they can finalize and produce the song with DJs and producers, then brand it with the entrepreneurs. Lastly, they can broadcast music to a greater audience using this original iconic satellite dish. At the same time, they can perform the music live right at the bandstand studio stage, where the first live music show in America was recorded.",
+      "When the door closes, the public common space is a fully functioning recording studio where musicians can join to produce songs; and when the door opens, it becomes a stage for the community to join and gather, and to enjoy the live music originated right at the location by the best musicians. The annual lead DJ will organize and perform to the audience from this elevated space; other musicians will also be able to participate from their clusters around the center outdoor venue.",
+      "In this setting, all musicians will have the opportunity to be heard, and the public is always welcome to join the constant collaborations and performances. Individuals can move in according to their needs and move around for different clustering.",
     ],
     client: "Housing Studio — Scott Erby",
     status: "Academic — SP 2023",
@@ -79,6 +83,79 @@ export const projects: Project[] = [
       "/images/projects/music-box/01.jpg",
       "/images/projects/music-box/02.jpg",
       "/images/projects/music-box/03.jpg",
+      "/images/projects/music-box/04.jpg",
+      "/images/projects/music-box/05.jpg",
+      "/images/projects/music-box/06.jpg",
+      "/images/projects/music-box/07.jpg",
+      "/images/projects/music-box/08.jpg",
+      "/images/projects/music-box/09.jpg",
+      "/images/projects/music-box/10.jpg",
+      "/images/projects/music-box/11.jpg",
+      "/images/projects/music-box/12.jpg",
+      "/images/projects/music-box/13.jpg",
+      "/images/projects/music-box/14.jpg",
+      "/images/projects/music-box/15.jpg",
+    ],
+  },
+  {
+    slug: "boning-chainmail",
+    title: "Armature",
+    year: 2022,
+    location: "Philadelphia, USA",
+    category: "Function of Fashion in Architecture",
+    summary:
+      "A garment exploring the structural logics of boning and digitally fabricated chainmail — translating corset construction and traditional Chinese link-weaving into a wearable architectural skin.",
+    description: [
+      "The project takes inspiration from Qipao — a traditional Chinese costume flat pattern — Chainmail, an ancient armor technique, patterns from Yingzao Fashi, a Chinese traditional architectural booklet on standards and models for construction, and Boning, a common clothing structure. These references were combined through architectural thinking and realized with digital fabrication skills.",
+      "The chainmail panels were developed through research into traditional Chinese weave patterns and translated into parametrically designed hexagonal modules 3D-printed in PLA. Each unit interlinks without adhesive, forming a flexible self-supporting mesh that zones the body into structural regions — tight at the shoulders and collar, cascading freely at the hem as individual hanging links.",
+      "The flat pattern follows Qipao construction logic — a single continuous front panel with minimal seaming — while boning channels are embedded along the structural seams to maintain form. Design sketches mapped the tension between the rigid boning armature and the flexible chainmail surface across the body.",
+      "Paper and plastic mockups on dress form tested drape and panel relationships before final assembly. The finished garment is cut from black satin and sheer organza, with 3D-printed PLA chainmail applied in diagonal bands that cut across the body, resolving in a fringe of dangling links at the hem.",
+    ],
+    client: "Wenliu Tu (collaborator) — FOFA, Danielle Willems",
+    status: "Academic — SP 2022",
+    carouselCount: 3,
+    images: [
+      "/images/projects/boning-chainmail/cover.jpg",
+      "/images/projects/boning-chainmail/07.jpg",
+      "/images/projects/boning-chainmail/08.jpg",
+      "/images/projects/boning-chainmail/09.jpg",
+      "/images/projects/boning-chainmail/10.jpg",
+      "/images/projects/boning-chainmail/11.jpg",
+      "/images/projects/boning-chainmail/12.jpg",
+      "/images/projects/boning-chainmail/13.jpg",
+      "/images/projects/boning-chainmail/01.jpg",
+      "/images/projects/boning-chainmail/02.jpg",
+      "/images/projects/boning-chainmail/03.jpg",
+      "/images/projects/boning-chainmail/04.jpg",
+      "/images/projects/boning-chainmail/05.jpg",
+      "/images/projects/boning-chainmail/06.jpg",
+      "/images/projects/boning-chainmail/14.jpg",
+      "/images/projects/boning-chainmail/15.jpg",
+      "/images/projects/boning-chainmail/16.jpg",
+    ],
+  },
+  {
+    slug: "fashion-accessory",
+    title: "Fashion Accessory & Digital Fabrication",
+    year: 2022,
+    location: "Philadelphia, USA",
+    category: "Function of Fashion in Architecture",
+    summary:
+      "A wearable accessory system — headpiece and back harness — developed through digital fabrication, translating the structural logic of chainmail into 3D-printed parametric components.",
+    description: [
+      "This team project extends the material research from the Armature garment into a wearable accessory system. Abstracting what we loved from the chainmail piece, we translated the swinging, interlocking structure into a set of 3D-printed components that assemble into a headpiece and back harness.",
+      "Each component is designed as an independent unit — Piece 1, Piece 2, and Piece 3 — connected through a shared joint logic. The system was developed parametrically, using Grasshopper scripts to fit 2D patterns onto 3D body geometry and generate the curves and shapes of each module.",
+      "The headpiece resolves as a crown-like form, its rigid printed links referencing both the architecture of chainmail armor and the structural boning of historical dress. The back harness uses the same joint system at a larger scale, forming a self-supporting structure that sits against the spine.",
+    ],
+    client: "Wenliu Tu (collaborator) — FOFA, Danielle Willems",
+    status: "Academic — SP 2022",
+    images: [
+      "/images/projects/fashion-accessory/cover.jpg",
+      "/images/projects/fashion-accessory/01.jpg",
+      "/images/projects/fashion-accessory/02.jpg",
+      "/images/projects/fashion-accessory/03.jpg",
+      "/images/projects/fashion-accessory/04.jpg",
+      "/images/projects/fashion-accessory/05.jpg",
     ],
   },
   {

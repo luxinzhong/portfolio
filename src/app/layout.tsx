@@ -4,6 +4,7 @@ import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import ConstructionModal from "@/components/ConstructionModal";
+import NoRightClick from "@/components/NoRightClick";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col">
         <ConstructionModal />
+        <NoRightClick />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
