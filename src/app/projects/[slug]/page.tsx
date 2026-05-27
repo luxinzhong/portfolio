@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getProject, projects } from "@/data/projects";
 import Carousel from "@/components/Carousel";
+import { imgSrc } from "@/lib/imgSrc";
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -60,12 +61,12 @@ export default async function ProjectPage({ params }: { params: Params }) {
       {/* Hero: carousel if available, otherwise static cover */}
       {carouselImages.length > 0 ? (
         <div className="mt-8 w-full">
-          <Carousel images={carouselImages} alt={project.title} />
+          <Carousel images={carouselImages.map(imgSrc)} alt={project.title} />
         </div>
       ) : (
         <div className="mt-8 w-full bg-zinc-100 dark:bg-zinc-900">
           <Image
-            src={coverImage}
+            src={imgSrc(coverImage)}
             alt={project.title}
             width={0}
             height={0}
@@ -118,7 +119,7 @@ export default async function ProjectPage({ params }: { params: Params }) {
               className="mb-4 break-inside-avoid bg-zinc-100 dark:bg-zinc-900"
             >
               <Image
-                src={src}
+                src={imgSrc(src)}
                 alt={`${project.title} — view ${carouselCount + i + 2}`}
                 width={0}
                 height={0}

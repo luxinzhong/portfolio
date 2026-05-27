@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="ceiling" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ecdfc8"/>
+      <stop offset="100%" stop-color="#d8ccb4"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8b898"/>
+      <stop offset="100%" stop-color="#b0a07e"/>
+    </linearGradient>
+    <linearGradient id="step1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8bca4"/>
+      <stop offset="100%" stop-color="#bcb098"/>
+    </linearGradient>
+    <linearGradient id="step2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c0b49c"/>
+      <stop offset="100%" stop-color="#b4a88e"/>
+    </linearGradient>
+  </defs>
+  <!-- Warm interior background wall -->
+  <rect width="1600" height="900" fill="#d4c8b2"/>
+  <!-- Coffered timber ceiling -->
+  <rect y="0" width="1600" height="248" fill="url(#ceiling)"/>
+  <!-- Coffer structural grid (verticals) -->
+  <rect x="157" y="0" width="4" height="248" fill="#c0b49a" opacity="0.6"/>
+  <rect x="317" y="0" width="4" height="248" fill="#c0b49a" opacity="0.6"/>
+  <rect x="477" y="0" width="4" height="248" fill="#c0b49a" opacity="0.6"/>
+  <rect x="637" y="0" width="4" height="248" fill="#c0b49a" opacity="0.6"/>
+  <rect x="797" y="0" width="4" height="248" fill="#c0b49a" opacity="0.6"/>
+  <rect x="957" y="0" width="4" height="248" fill="#c0b49a" opacity="0.6"/>
+  <rect x="1117" y="0" width="4" height="248" fill="#c0b49a" opacity="0.6"/>
+  <rect x="1277" y="0" width="4" height="248" fill="#c0b49a" opacity="0.6"/>
+  <rect x="1437" y="0" width="4" height="248" fill="#c0b49a" opacity="0.6"/>
+  <!-- Coffer grid (horizontals) -->
+  <rect x="0" y="80" width="1600" height="4" fill="#c0b49a" opacity="0.6"/>
+  <rect x="0" y="162" width="1600" height="4" fill="#c0b49a" opacity="0.6"/>
+  <!-- Skylight apertures + glow -->
+  <ellipse cx="317" cy="40" rx="110" ry="32" fill="#f4e8c4" opacity="0.52"/>
+  <ellipse cx="797" cy="40" rx="130" ry="32" fill="#f4e8c4" opacity="0.62"/>
+  <ellipse cx="1277" cy="40" rx="110" ry="32" fill="#f4e8c4" opacity="0.52"/>
+  <ellipse cx="317" cy="122" rx="100" ry="28" fill="#f0e4c0" opacity="0.42"/>
+  <ellipse cx="797" cy="122" rx="118" ry="28" fill="#f0e4c0" opacity="0.48"/>
+  <ellipse cx="1277" cy="122" rx="100" ry="28" fill="#f0e4c0" opacity="0.42"/>
+  <!-- Skylight light shafts -->
+  <polygon points="247,248 387,248 500,900 134,900" fill="#f0e0c0" opacity="0.06"/>
+  <polygon points="717,248 877,248 1010,900 584,900" fill="#f0e0c0" opacity="0.07"/>
+  <polygon points="1197,248 1357,248 1490,900 1064,900" fill="#f0e0c0" opacity="0.06"/>
+  <!-- Stepped reading landscape -->
+  <!-- Platform level 1 (highest) -->
+  <rect x="0" y="248" width="1600" height="88" fill="url(#step1)"/>
+  <rect x="0" y="332" width="1600" height="10" fill="#a49880"/>
+  <!-- Shelving on level 1 -->
+  <rect x="90" y="258" width="22" height="68" fill="#56504a"/>
+  <rect x="122" y="262" width="22" height="64" fill="#56504a"/>
+  <rect x="310" y="258" width="22" height="68" fill="#56504a"/>
+  <rect x="342" y="262" width="22" height="64" fill="#56504a"/>
+  <rect x="1210" y="258" width="22" height="68" fill="#56504a"/>
+  <rect x="1242" y="262" width="22" height="64" fill="#56504a"/>
+  <rect x="1420" y="258" width="22" height="68" fill="#56504a"/>
+  <rect x="1452" y="262" width="22" height="64" fill="#56504a"/>
+  <!-- Platform level 2 -->
+  <rect x="0" y="342" width="1600" height="108" fill="url(#step2)"/>
+  <rect x="0" y="446" width="1600" height="10" fill="#9c9078"/>
+  <!-- Platform level 3 -->
+  <rect x="0" y="456" width="1600" height="124" fill="#bab09a"/>
+  <rect x="0" y="576" width="1600" height="10" fill="#948870"/>
+  <!-- Ground floor -->
+  <rect x="0" y="586" width="1600" height="314" fill="url(#floor)"/>
+  <!-- End walls / reading alcoves -->
+  <rect x="0" y="586" width="88" height="314" fill="#c0ae90" opacity="0.7"/>
+  <rect x="1512" y="586" width="88" height="314" fill="#c0ae90" opacity="0.7"/>
+  <!-- Reading windows (end walls) -->
+  <rect x="6" y="604" width="76" height="190" fill="#d8e8ec" fill-opacity="0.55"/>
+  <rect x="1518" y="604" width="76" height="190" fill="#d8e8ec" fill-opacity="0.55"/>
+  <!-- Silhouette figures -->
+  <ellipse cx="560" cy="556" rx="10" ry="28" fill="#38342e" opacity="0.28"/>
+  <ellipse cx="800" cy="660" rx="10" ry="28" fill="#38342e" opacity="0.28"/>
+  <ellipse cx="1040" cy="452" rx="10" ry="28" fill="#38342e" opacity="0.28"/>
+  <ellipse cx="400" cy="752" rx="10" ry="28" fill="#38342e" opacity="0.22"/>
+</svg>

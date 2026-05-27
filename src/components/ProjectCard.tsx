@@ -1,13 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Project } from "@/data/projects";
+import { imgSrc } from "@/lib/imgSrc";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Link href={`/projects/${project.slug}`} className="group block">
       <div className="relative aspect-[4/3] overflow-hidden bg-zinc-100 dark:bg-zinc-900">
         <Image
-          src={project.images[0]}
+          src={imgSrc(project.images[0])}
           alt={project.title}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"

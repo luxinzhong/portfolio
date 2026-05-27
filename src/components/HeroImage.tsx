@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Carousel from "@/components/Carousel";
+import { imgSrc } from "@/lib/imgSrc";
 
 type HeroItem =
   | { type: "image"; src: string; alt: string }
@@ -43,7 +44,7 @@ export default function HeroImage() {
         </div>
       ) : (
         <Image
-          src={item.src}
+          src={imgSrc(item.src)}
           alt={item.alt}
           fill
           className="object-cover"

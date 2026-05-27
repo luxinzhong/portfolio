@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e2ddd6"/>
+      <stop offset="100%" stop-color="#cac4bc"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c4bba8"/>
+      <stop offset="100%" stop-color="#b0a794"/>
+    </linearGradient>
+    <linearGradient id="gravel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#bab2a0"/>
+      <stop offset="100%" stop-color="#a8a090"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <!-- Ground -->
+  <rect y="610" width="1600" height="290" fill="url(#ground)"/>
+  <!-- Garden path -->
+  <rect x="748" y="610" width="104" height="290" fill="#c0b9a8" opacity="0.55"/>
+  <!-- Left wing -->
+  <rect x="190" y="336" width="498" height="274" fill="#48443e"/>
+  <!-- Right wing -->
+  <rect x="912" y="336" width="498" height="274" fill="#48443e"/>
+  <!-- Roof slabs with overhang -->
+  <rect x="178" y="322" width="522" height="18" fill="#2e2a24"/>
+  <rect x="900" y="322" width="522" height="18" fill="#2e2a24"/>
+  <!-- Deep eave shadow -->
+  <rect x="178" y="338" width="522" height="22" fill="#1a1714" opacity="0.35"/>
+  <rect x="900" y="338" width="522" height="22" fill="#1a1714" opacity="0.35"/>
+  <!-- Courtyard void -->
+  <rect x="688" y="336" width="224" height="274" fill="url(#sky)"/>
+  <!-- Courtyard gravel floor -->
+  <rect x="688" y="600" width="224" height="12" fill="#b8b0a0"/>
+  <!-- Courtyard gravel texture -->
+  <line x1="688" y1="604" x2="912" y2="604" stroke="#a8a090" stroke-width="0.6" opacity="0.5"/>
+  <line x1="688" y1="608" x2="912" y2="608" stroke="#a8a090" stroke-width="0.6" opacity="0.4"/>
+  <!-- Sliding screens — left wing -->
+  <rect x="190" y="360" width="124" height="230" fill="#c8c4bc" fill-opacity="0.28" stroke="#8a8680" stroke-width="1"/>
+  <rect x="314" y="360" width="124" height="230" fill="#c8c4bc" fill-opacity="0.32" stroke="#8a8680" stroke-width="1"/>
+  <rect x="438" y="360" width="124" height="230" fill="#c8c4bc" fill-opacity="0.24" stroke="#8a8680" stroke-width="1"/>
+  <rect x="562" y="360" width="126" height="230" fill="#c8c4bc" fill-opacity="0.20" stroke="#8a8680" stroke-width="1"/>
+  <!-- Sliding screens — right wing -->
+  <rect x="912" y="360" width="124" height="230" fill="#c8c4bc" fill-opacity="0.26" stroke="#8a8680" stroke-width="1"/>
+  <rect x="1036" y="360" width="124" height="230" fill="#c8c4bc" fill-opacity="0.30" stroke="#8a8680" stroke-width="1"/>
+  <rect x="1160" y="360" width="124" height="230" fill="#c8c4bc" fill-opacity="0.24" stroke="#8a8680" stroke-width="1"/>
+  <rect x="1284" y="360" width="126" height="230" fill="#c8c4bc" fill-opacity="0.20" stroke="#8a8680" stroke-width="1"/>
+  <!-- Courtyard tree -->
+  <line x1="800" y1="430" x2="800" y2="600" stroke="#44403a" stroke-width="5"/>
+  <ellipse cx="800" cy="406" rx="48" ry="36" fill="#6a7a5c" opacity="0.72"/>
+  <ellipse cx="782" cy="418" rx="32" ry="24" fill="#7a8a6c" opacity="0.5"/>
+  <ellipse cx="820" cy="412" rx="26" ry="18" fill="#60705a" opacity="0.4"/>
+  <!-- Moss/gravel courtyard ground texture -->
+  <ellipse cx="720" cy="598" rx="12" ry="4" fill="#6a7a5c" opacity="0.3"/>
+  <ellipse cx="870" cy="596" rx="10" ry="4" fill="#6a7a5c" opacity="0.3"/>
+</svg>
