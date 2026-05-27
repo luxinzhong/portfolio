@@ -19,7 +19,7 @@ export default function Carousel({ images, alt }: { images: string[]; alt: strin
 
   const containerRef = useRef<HTMLDivElement>(null);
   const slideRef     = useRef<HTMLDivElement>(null);
-  const jumpTimer    = useRef<ReturnType<typeof setTimeout>>();
+  const jumpTimer    = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   const [cw, setCw]       = useState(0);
   const [sw, setSw]       = useState(0);
