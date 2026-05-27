@@ -8,9 +8,11 @@ import {
   Marker,
 } from "react-simple-maps";
 import { supabase } from "@/lib/supabase";
+import { imgSrc } from "@/lib/imgSrc";
 
 const GEO_URL =
   "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
+const US_STATES_URL = imgSrc("/us-states.json");
 const LOGGED_KEY = "visitor_geo_logged";
 const TTL_MS = 24 * 60 * 60 * 1000;
 
@@ -94,6 +96,32 @@ export default function GeoVisitorMap() {
                     fill: "#3f3f46",
                     stroke: "#52525b",
                     strokeWidth: 0.5,
+                    outline: "none",
+                  },
+                  pressed: { fill: "#27272a", outline: "none" },
+                }}
+              />
+            ))
+          }
+        </Geographies>
+
+        <Geographies geography={US_STATES_URL}>
+          {({ geographies }) =>
+            geographies.map((geo) => (
+              <Geography
+                key={geo.rsmKey}
+                geography={geo}
+                style={{
+                  default: {
+                    fill: "#27272a",
+                    stroke: "#52525b",
+                    strokeWidth: 0.4,
+                    outline: "none",
+                  },
+                  hover: {
+                    fill: "#3f3f46",
+                    stroke: "#71717a",
+                    strokeWidth: 0.4,
                     outline: "none",
                   },
                   pressed: { fill: "#27272a", outline: "none" },
