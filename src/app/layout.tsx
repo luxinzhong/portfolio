@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   title: "Lucy Zhong — Architecture Portfolio",
   description:
     "Architecture portfolio of Lucy Zhong, working across cultural, residential, and civic projects.",
+  icons: { icon: "/favicon.svg" },
 };
 
 export default function RootLayout({
