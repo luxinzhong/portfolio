@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         </h3>
         <span className="shrink-0 text-sm text-zinc-500">{project.year}</span>
       </div>
-      <p className="mt-1 text-sm text-zinc-500">{project.location}</p>
+
     </Link>
   );
 }

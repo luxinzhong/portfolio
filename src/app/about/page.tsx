@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About — Lucy Zhong",
@@ -26,12 +27,28 @@ const skills = [
 export default function About() {
   return (
     <div className="mx-auto w-full max-w-6xl px-6 py-24 sm:py-32">
-      <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500">
-        About
-      </p>
-      <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-        Lucy Zhong
-      </h1>
+      <div className="flex flex-col gap-10 sm:flex-row sm:items-end sm:gap-16">
+        <div className="relative w-48 shrink-0 sm:w-64">
+          <Image
+            src="/images/profile.jpg"
+            alt="Lucy Zhong"
+            width={0}
+            height={0}
+            sizes="(max-width: 640px) 192px, 256px"
+            className="h-auto w-full"
+            unoptimized
+            priority
+          />
+        </div>
+        <div>
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500">
+            About
+          </p>
+          <h1 className="mt-6 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+            Lucy Zhong
+          </h1>
+        </div>
+      </div>
 
       {/* Timeline */}
       <div className="mt-16">
