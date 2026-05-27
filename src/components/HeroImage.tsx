@@ -25,12 +25,34 @@ const items: HeroItem[] = [
   { type: "carousel" },
 ];
 
+const SESSION_KEY = "hero_queue";
+
+function shuffle(arr: number[]): number[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function nextHeroIndex(): number {
+  const raw = sessionStorage.getItem(SESSION_KEY);
+  let queue: number[] = raw ? JSON.parse(raw) : [];
+  if (queue.length === 0) {
+    queue = shuffle(Array.from({ length: items.length }, (_, i) => i));
+  }
+  const idx = queue.shift()!;
+  sessionStorage.setItem(SESSION_KEY, JSON.stringify(queue));
+  return idx;
+}
+
 export default function HeroImage() {
   const [item, setItem] = useState<HeroItem>(items[0]);
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    setItem(items[Math.floor(Math.random() * items.length)]);
+    setItem(items[nextHeroIndex()]);
     setReady(true);
     document.documentElement.style.overflow = "hidden";
     return () => { document.documentElement.style.overflow = ""; };
