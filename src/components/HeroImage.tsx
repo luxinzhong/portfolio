@@ -62,7 +62,7 @@ export default function HeroImage() {
     <div className={`fixed inset-0 transition-opacity duration-500 ${ready ? "opacity-100" : "opacity-0"}`}>
       {item.type === "carousel" ? (
         <div className="h-full flex items-center">
-          <Carousel images={armatureImages} alt="Armature" />
+          <Carousel images={armatureImages.map(imgSrc)} alt="Armature" />
         </div>
       ) : (
         <Image
