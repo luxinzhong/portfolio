@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { imgSrc } from "@/lib/imgSrc";
 
 export const metadata: Metadata = {
   title: "About — Lucy Zhong",
@@ -31,7 +32,7 @@ export default function About() {
       <div className="grid grid-cols-1 gap-12 sm:grid-cols-5 sm:gap-16">
         <div className="sm:col-span-2">
           <Image
-            src="/images/profile.jpg"
+            src={imgSrc("/images/profile.jpg")}
             alt="Lucy Zhong"
             width={0}
             height={0}
