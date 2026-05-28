@@ -103,7 +103,7 @@ export default function GeoVisitorMap() {
           }
         </Geographies>
 
-{visitors.map((v) => (
+        {visitors.map((v) => (
           <Marker key={v.id} coordinates={[v.lng, v.lat]}>
             <circle r={7} fill="#f59e0b" fillOpacity={0.15} />
             <circle r={3} fill="#f59e0b" fillOpacity={0.9} />
