@@ -124,7 +124,7 @@ export const projects: Project[] = [
       "In this setting, all musicians will have the opportunity to be heard, and the public is always welcome to join the constant collaborations and performances. Individuals can move in according to their needs and move around for different clustering.",
     ],
     authors: "Lucy Zhong",
-    organization: "Housing Studio — Scott Erby",
+    organization: "University of Pennsylvania",
     status: "Academic — SP 2023",
     images: [
       "/images/projects/music-box/cover.jpg",
@@ -161,7 +161,7 @@ export const projects: Project[] = [
       "Paper and plastic mockups on dress form tested drape and panel relationships before final assembly. The finished garment is cut from black satin and sheer organza, with 3D-printed PLA chainmail applied in diagonal bands that cut across the body, resolving in a fringe of dangling links at the hem.",
     ],
     authors: "Lucy Zhong, Wenliu Tu",
-    organization: "Wenliu Tu (collaborator) — FOFA, Danielle Willems",
+    organization: "University of Pennsylvania",
     status: "Academic — SP 2022",
     carouselCount: 3,
     images: [
@@ -199,7 +199,7 @@ export const projects: Project[] = [
       "The headpiece resolves as a crown-like form, its rigid printed links referencing both the architecture of chainmail armor and the structural boning of historical dress. The back harness uses the same joint system at a larger scale, forming a self-supporting structure that sits against the spine.",
     ],
     authors: "Lucy Zhong, Marjorie Tello-Wong, Khang Truong",
-    organization: "Wenliu Tu (collaborator) — FOFA, Danielle Willems",
+    organization: "University of Pennsylvania",
     status: "Academic — SP 2022",
     images: [
       "/images/projects/fashion-accessory/cover.jpg",
@@ -224,7 +224,7 @@ export const projects: Project[] = [
       "The tool translates luminaire data and room geometry into spatial light maps, allowing designers to test configurations early in the process without leaving their 3D modelling environment. Heat-map outputs and photometric diagrams update parametrically as geometry changes.",
     ],
     authors: "Lucy Zhong, Ivy Song, Cheuk Ming Ng",
-    organization: "Academic Research",
+    organization: "University of Pennsylvania",
     status: "Research Tool — SP 2022",
     images: [
       "/images/projects/where-is-the-light/cover.jpg",
@@ -246,7 +246,7 @@ export const projects: Project[] = [
       "The parametric model links building geometry to material quantities and carbon factors, enabling rapid what-if comparisons across structural systems and envelope assemblies. Results are visualised through interactive charts and building diagrams to support design decision-making at scale.",
     ],
     authors: "Lucy Zhong",
-    organization: "Academic Research",
+    organization: "University of Pennsylvania",
     status: "Research — SP 2023",
     images: [
       "/images/projects/parametric-lca/cover.jpg",
