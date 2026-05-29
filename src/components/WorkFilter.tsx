@@ -42,7 +42,7 @@ export default function WorkFilter({ projects }: { projects: Project[] }) {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-x-6 sm:gap-x-8 gap-y-8 sm:gap-y-12 sm:grid-cols-2">
         {filtered.map((project) => (
           <ProjectCard key={project.slug} project={project} />
         ))}

@@ -12,8 +12,8 @@ export default function ProjectCard({ project }: { project: Project }) {
           {project.category}
         </span>
       </div>
-      <div className="mt-4 flex items-baseline justify-between gap-4">
-        <h3 className="text-lg font-medium tracking-tight transition-colors group-hover:text-zinc-500">
+      <div className="mt-3 sm:mt-4 flex items-baseline justify-between gap-3 sm:gap-4">
+        <h3 className="text-base sm:text-lg font-medium tracking-tight transition-colors group-hover:text-zinc-500">
           {project.title}
         </h3>
         <span className="shrink-0 text-sm text-zinc-500">{project.year}</span>

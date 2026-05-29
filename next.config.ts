@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 // The site is served from https://luxinzhong.github.io/portfolio/, so in
 // production it must live under the `/portfolio` base path. Locally
@@ -18,7 +19,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   turbopack: {
-    root: ".",
+    root: path.resolve(__dirname),
   },
 };
 
