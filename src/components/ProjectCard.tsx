@@ -5,7 +5,7 @@ import ProjectCoverImage from "@/components/ProjectCoverImage";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <Link href={`/projects/${project.slug}`} className="group block">
+    <Link href={`/projects/${project.slug}`} className="group block" data-cursor="View →">
       <div className="relative aspect-[4/3] overflow-hidden bg-zinc-100 dark:bg-zinc-900">
         <ProjectCoverImage src={imgSrc(project.images[0])} alt={project.title} />
         <span className="absolute bottom-4 left-4 rounded-full bg-black/30 px-3 py-1 text-xs font-medium uppercase tracking-wide text-white backdrop-blur">
