@@ -7,7 +7,11 @@ export type Project = {
   tags: string[];
   summary: string;
   description: string[];
-  client: string;
+  authors: string;
+  organization: string;
+  instructor?: string;
+  critics?: string;
+  link?: string;
   status: string;
   images: string[];
   carouselCount?: number;
@@ -29,7 +33,10 @@ export const projects: Project[] = [
       "Structural floor geometry was derived from finite element analysis: stress lines extracted from simulation become the reinforcement curves, and the resulting form surpasses a conventional flat slab in performance while using significantly less material.",
       "Radiant heating and cooling is embedded in the floor structure, with services running through tubes to tie the modular floor units together. Climate studies comparing single- and double-atrium configurations informed the final thermal strategy.",
     ],
-    client: "Structural Design Research Studio — Masoud Akbarzadeh + Yao Lu",
+    authors: "Lucy Zhong, Xiayu Zhao",
+    organization: "University of Pennsylvania",
+    instructor: "Masoud Akbarzadeh, Yao Lu",
+    link: "https://psl.design.upenn.edu/structural-design-research-studio-generative-prefabrication-spring-2023/",
     status: "Academic — SP 2023",
     images: [
       "/images/projects/the-knot/cover.jpg",
@@ -49,20 +56,28 @@ export const projects: Project[] = [
     category: "Computational Prefabrication",
     tags: ["Computational", "Fabrication", "Housing", "Sustainable"],
     summary:
-      "A prefabricated residential prototype for the UAE that uses lightweight vaulted floor structures, carbon-absorbing concrete, and a configurable kit-of-parts system to reduce construction waste and energy use.",
+      "A comprehensive modular design strategy for a carbon-negative House of the Future in the UAE — integrating a prefabricated funicular floor structure, carbon-absorbing 3D-printed concrete, and a configurable kit-of-parts system powered by on-site photovoltaics and solar-driven desalination.",
     description: [
-      "The Light-Kit House redefines sustainable living in the UAE through a lightweight floor structure, carbon-absorbing 3D-printed concrete, and a modular system of configurable parts. The design prioritizes energy efficiency through thermal mass, natural ventilation, and integrated water collection.",
-      "The building structure consists of prefabricated floors and column systems whose funicular geometry mirrors vaulted domes and ancient Middle Eastern architectural forms — reducing construction material by up to 50% compared to conventional flat-slab construction.",
-      "The 3D-printed PPAS screen facades allow air to permeate through a perforated geometry, controlling air permeability while filtering harsh desert sunlight. The lattice panels provide natural ventilation and create an intimate interior environment.",
-      "The ground floor is open for cross-ventilation. The second floor's 3D-printed lattice walls admit wind while rejecting solar heat gain. Structural savings propagate through the entire lateral and foundation system, significantly reducing the building's overall material footprint.",
+      "The Light-Kit House is a comprehensive modular design strategy for a carbon-negative House of the Future in the UAE. The design integrates a high-performance prefabricated funicular floor structure with 50% less mass than conventional systems, a carbon-absorbing 3D-printed concrete mix, and a configurable kit-of-parts that assembles into diverse plan configurations — all powered by rooftop photovoltaics sized to also supply on-site water desalination.",
+      "The building structure consists of prefabricated floors and column systems whose compressive-dominant geometry mirrors the vaulted domes of ancient Middle Eastern architecture. This funicular logic reduces construction material by up to 50%, propagating structural savings through the lateral and foundation systems. The 5×5m modular grid can be stacked two or three stories and reconfigured in plan to suit different programs and household sizes.",
+      "Structural elements are 3D-printed using a carbon-absorbing concrete mixture, eliminating formwork and minimizing construction waste. An immediate CNC subtractive pass produces precise connection details and smooth surfaces — an additive-subtractive cycle that achieves fabrication tolerances comparable to precast factory production. The 2.5×2.5m prefabricated floor units assemble on columns or structural walls, exposing the structural system as the finished architecture and removing the need for separate finishing layers.",
+      "Passive cooling strategies draw on the Emirati courtyard tradition. The house is oriented with its long façade to the prevailing north-west sea breeze, which enters through the open ground-floor courtyard and exhausts through the second floor's perforated 3D-printed screens — a stack effect that continuously purges warm air. Recessed windows and lattice screen walls block direct solar gain while admitting diffuse daylight, and the thermal mass of the printed concrete attenuates daily temperature swings.",
+      "A rooftop photovoltaic array provides more than the house's annual energy demand. Surplus generation — estimated at 8,800 kWh/year for a 100 m² PV field — is directed toward solar-driven desalination and grey-water treatment, supplying water for plants and trees across a cluster of homes. Radiant cooling embedded in the concrete slab and solar-driven dehumidification handle the remaining active cooling load, keeping mechanical energy use to a minimum.",
     ],
-    client: "Polyhedral Structures Lab, UPenn",
-    status: "Academic — FA 2023",
+    authors: "Dr. Masoud Akbarzadeh, Lucy Zhong, Dr. Hua Chai.\nImages courtsey of PSL, Fortes.vision, and Thermal Architecture Lab.",
+    critics: "Peyman Askarinejad (PAN Partners), Charles Bermann (Diller Scofidio + Renfro), Pamela Cabrera (Transsolar KlimaEngineering), James Clark (MTFA Architecture), Richard Farley (UPenn), Orsolya Gáspár (STURE Lab, Budapest University of Tech), Florian Meier (Knippers Helbig), Mette Ramsgaard Thomsen (UPenn, CITA), Franca Trubiano (UPenn)",
+    organization: "Polyhedral Structures Lab, UPenn",
+    status: "Competition",
     images: [
       "/images/projects/light-kit-house/cover.jpg",
-      "/images/projects/light-kit-house/01.jpg",
-      "/images/projects/light-kit-house/02.jpg",
-      "/images/projects/light-kit-house/03.jpg",
+      "/images/projects/light-kit-house/render-exterior.jpg",
+      "/images/projects/light-kit-house/render-stair.jpg",
+      "/images/projects/light-kit-house/render-interior.jpg",
+      "/images/projects/light-kit-house/render-courtyard.jpg",
+      "/images/projects/light-kit-house/render-front.jpg",
+      "/images/projects/light-kit-house/render-sunset.jpg",
+      "/images/projects/light-kit-house/render-model.jpg",
+      "/images/projects/light-kit-house/render-plans.jpg",
     ],
   },
   {
@@ -80,7 +95,8 @@ export const projects: Project[] = [
       "Design options for a 3D-printed wall in a residential project were developed and rendered, demonstrating how parametric surface articulation translates into buildable, materially expressive architectural elements.",
       "The research was conducted at the Polyhedral Structures Lab at the University of Pennsylvania, in parallel with structural and fabrication research into modular prefabricated systems.",
     ],
-    client: "Polyhedral Structures Lab, UPenn",
+    authors: "Dr. Masoud Akbarzadeh, Lucy Zhong",
+    organization: "Polyhedral Structures Lab, UPenn",
     status: "Academic — SU 2023",
     images: [
       "/images/projects/tpms-wall/03.jpg",
@@ -107,7 +123,8 @@ export const projects: Project[] = [
       "When the door closes, the public common space is a fully functioning recording studio where musicians can join to produce songs; and when the door opens, it becomes a stage for the community to join and gather, and to enjoy the live music originated right at the location by the best musicians. The annual lead DJ will organize and perform to the audience from this elevated space; other musicians will also be able to participate from their clusters around the center outdoor venue.",
       "In this setting, all musicians will have the opportunity to be heard, and the public is always welcome to join the constant collaborations and performances. Individuals can move in according to their needs and move around for different clustering.",
     ],
-    client: "Housing Studio — Scott Erby",
+    authors: "Lucy Zhong",
+    organization: "Housing Studio — Scott Erby",
     status: "Academic — SP 2023",
     images: [
       "/images/projects/music-box/cover.jpg",
@@ -143,7 +160,8 @@ export const projects: Project[] = [
       "The flat pattern follows Qipao construction logic — a single continuous front panel with minimal seaming — while boning channels are embedded along the structural seams to maintain form. Design sketches mapped the tension between the rigid boning armature and the flexible chainmail surface across the body.",
       "Paper and plastic mockups on dress form tested drape and panel relationships before final assembly. The finished garment is cut from black satin and sheer organza, with 3D-printed PLA chainmail applied in diagonal bands that cut across the body, resolving in a fringe of dangling links at the hem.",
     ],
-    client: "Wenliu Tu (collaborator) — FOFA, Danielle Willems",
+    authors: "Lucy Zhong, Wenliu Tu",
+    organization: "Wenliu Tu (collaborator) — FOFA, Danielle Willems",
     status: "Academic — SP 2022",
     carouselCount: 3,
     images: [
@@ -180,7 +198,8 @@ export const projects: Project[] = [
       "Each component is designed as an independent unit — Piece 1, Piece 2, and Piece 3 — connected through a shared joint logic. The system was developed parametrically, using Grasshopper scripts to fit 2D patterns onto 3D body geometry and generate the curves and shapes of each module.",
       "The headpiece resolves as a crown-like form, its rigid printed links referencing both the architecture of chainmail armor and the structural boning of historical dress. The back harness uses the same joint system at a larger scale, forming a self-supporting structure that sits against the spine.",
     ],
-    client: "Wenliu Tu (collaborator) — FOFA, Danielle Willems",
+    authors: "Lucy Zhong, Marjorie Tello-Wong, Khang Truong",
+    organization: "Wenliu Tu (collaborator) — FOFA, Danielle Willems",
     status: "Academic — SP 2022",
     images: [
       "/images/projects/fashion-accessory/cover.jpg",
@@ -204,7 +223,8 @@ export const projects: Project[] = [
       "Lighting Generator is a Grasshopper plugin that creates a quick guiding solution for generating artificial lighting ranges in both design development and architectural design.",
       "The tool translates luminaire data and room geometry into spatial light maps, allowing designers to test configurations early in the process without leaving their 3D modelling environment. Heat-map outputs and photometric diagrams update parametrically as geometry changes.",
     ],
-    client: "Academic Research",
+    authors: "Lucy Zhong, Ivy Song, Cheuk Ming Ng",
+    organization: "Academic Research",
     status: "Research Tool — SP 2022",
     images: [
       "/images/projects/where-is-the-light/cover.jpg",
@@ -225,7 +245,8 @@ export const projects: Project[] = [
       "This project analysed the building lifecycle and carbon impact of the newly constructed Amy Gutmann Hall, the University of Pennsylvania's largest and most ambitious structure, using BHoM and other research resources.",
       "The parametric model links building geometry to material quantities and carbon factors, enabling rapid what-if comparisons across structural systems and envelope assemblies. Results are visualised through interactive charts and building diagrams to support design decision-making at scale.",
     ],
-    client: "Academic Research",
+    authors: "Lucy Zhong",
+    organization: "Academic Research",
     status: "Research — SP 2023",
     images: [
       "/images/projects/parametric-lca/cover.jpg",

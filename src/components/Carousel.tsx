@@ -102,7 +102,7 @@ export default function Carousel({ images, alt }: { images: string[]; alt: strin
   return (
     <div
       ref={containerRef}
-      className={`relative overflow-hidden bg-white select-none py-10 transition-opacity duration-300 ${
+      className={`relative overflow-hidden bg-white select-none py-6 sm:py-10 transition-opacity duration-300 ${
         ready ? "opacity-100" : "opacity-0"
       }`}
       style={{ cursor: dragging ? "grabbing" : "grab", touchAction: "none" }}
