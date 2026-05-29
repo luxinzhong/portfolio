@@ -10,10 +10,10 @@ type HeroItem =
   | { type: "carousel" };
 
 const armatureImages = [
-  "/images/projects/boning-chainmail/cover.jpg",
-  "/images/projects/boning-chainmail/07.jpg",
-  "/images/projects/boning-chainmail/08.jpg",
-  "/images/projects/boning-chainmail/09.jpg",
+  "/images/projects/armature/cover.jpg",
+  "/images/projects/armature/07.jpg",
+  "/images/projects/armature/08.jpg",
+  "/images/projects/armature/09.jpg",
 ];
 
 const items: HeroItem[] = [
