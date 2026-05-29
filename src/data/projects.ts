@@ -4,6 +4,7 @@ export type Project = {
   year: number;
   location: string;
   category: string;
+  tags: string[];
   summary: string;
   description: string[];
   client: string;
@@ -19,6 +20,7 @@ export const projects: Project[] = [
     year: 2023,
     location: "New York City, USA",
     category: "Computational Prefabrication",
+    tags: ["Computational", "Fabrication", "Structural"],
     summary:
       "A concrete museum exploring cross-influences between structural efficiency, digital fabrication, and form-finding through modular 3D-printed prefabricated systems.",
     description: [
@@ -45,6 +47,7 @@ export const projects: Project[] = [
     year: 2023,
     location: "Dubai, United Arab Emirates",
     category: "Computational Prefabrication",
+    tags: ["Computational", "Fabrication", "Housing", "Sustainable"],
     summary:
       "A prefabricated residential prototype for the UAE that uses lightweight vaulted floor structures, carbon-absorbing concrete, and a configurable kit-of-parts system to reduce construction waste and energy use.",
     description: [
@@ -63,11 +66,39 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "tpms-wall",
+    title: "TPMS Wall",
+    year: 2023,
+    location: "Philadelphia, USA",
+    category: "Computational Fabrication",
+    tags: ["Computational", "Fabrication"],
+    summary:
+      "A research investigation into concrete 3D printing — developing overhang analysis tools, slicing workflows, and printability studies to explore the design possibilities of digitally fabricated walls and surfaces.",
+    description: [
+      "This research explores the structural and geometric possibilities of concrete 3D printing, from parametric surface generation through to fabrication-ready slicing workflows. The work bridges computational design and physical material constraints, testing where the two can productively push against each other.",
+      "Slicing tests were prepared for concrete 3D printing, analyzing layer geometry, overhang limits, and print path continuity. Overhang analysis scripts quantified printability across surface variations, producing distribution graphs that directly informed design decisions.",
+      "Design options for a 3D-printed wall in a residential project were developed and rendered, demonstrating how parametric surface articulation translates into buildable, materially expressive architectural elements.",
+      "The research was conducted at the Polyhedral Structures Lab at the University of Pennsylvania, in parallel with structural and fabrication research into modular prefabricated systems.",
+    ],
+    client: "Polyhedral Structures Lab, UPenn",
+    status: "Academic — SU 2023",
+    images: [
+      "/images/projects/tpms-wall/03.jpg",
+      "/images/projects/tpms-wall/cover.jpg",
+      "/images/projects/tpms-wall/01.jpg",
+      "/images/projects/tpms-wall/02.jpg",
+      "/images/projects/tpms-wall/04.jpg",
+      "/images/projects/tpms-wall/05.jpg",
+      "/images/projects/tpms-wall/06.jpg",
+    ],
+  },
+  {
     slug: "music-box",
     title: "Music Box",
     year: 2023,
     location: "Philadelphia, USA",
     category: "Modular Adaptive Reuse",
+    tags: ["Adaptive Reuse", "Housing", "Community"],
     summary:
       "An adaptive reuse of the American Bandstand Studio in Philadelphia as collective housing and a public music venue — rethinking how musicians live, collaborate, and share music with the surrounding community.",
     description: [
@@ -98,11 +129,12 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "boning-chainmail",
+    slug: "armature",
     title: "Armature",
     year: 2022,
     location: "Philadelphia, USA",
     category: "Function of Fashion in Architecture",
+    tags: ["Fashion", "Fabrication"],
     summary:
       "A garment exploring the structural logics of boning and digitally fabricated chainmail — translating corset construction and traditional Chinese link-weaving into a wearable architectural skin.",
     description: [
@@ -115,23 +147,23 @@ export const projects: Project[] = [
     status: "Academic — SP 2022",
     carouselCount: 3,
     images: [
-      "/images/projects/boning-chainmail/cover.jpg",
-      "/images/projects/boning-chainmail/07.jpg",
-      "/images/projects/boning-chainmail/08.jpg",
-      "/images/projects/boning-chainmail/09.jpg",
-      "/images/projects/boning-chainmail/10.jpg",
-      "/images/projects/boning-chainmail/11.jpg",
-      "/images/projects/boning-chainmail/12.jpg",
-      "/images/projects/boning-chainmail/13.jpg",
-      "/images/projects/boning-chainmail/01.jpg",
-      "/images/projects/boning-chainmail/02.jpg",
-      "/images/projects/boning-chainmail/03.jpg",
-      "/images/projects/boning-chainmail/04.jpg",
-      "/images/projects/boning-chainmail/05.jpg",
-      "/images/projects/boning-chainmail/06.jpg",
-      "/images/projects/boning-chainmail/14.jpg",
-      "/images/projects/boning-chainmail/15.jpg",
-      "/images/projects/boning-chainmail/16.jpg",
+      "/images/projects/armature/cover.jpg",
+      "/images/projects/armature/07.jpg",
+      "/images/projects/armature/08.jpg",
+      "/images/projects/armature/09.jpg",
+      "/images/projects/armature/10.jpg",
+      "/images/projects/armature/11.jpg",
+      "/images/projects/armature/12.jpg",
+      "/images/projects/armature/13.jpg",
+      "/images/projects/armature/01.jpg",
+      "/images/projects/armature/02.jpg",
+      "/images/projects/armature/03.jpg",
+      "/images/projects/armature/04.jpg",
+      "/images/projects/armature/05.jpg",
+      "/images/projects/armature/06.jpg",
+      "/images/projects/armature/14.jpg",
+      "/images/projects/armature/15.jpg",
+      "/images/projects/armature/16.jpg",
     ],
   },
   {
@@ -140,6 +172,7 @@ export const projects: Project[] = [
     year: 2022,
     location: "Philadelphia, USA",
     category: "Function of Fashion in Architecture",
+    tags: ["Fashion", "Fabrication"],
     summary:
       "A wearable accessory system — headpiece and back harness — developed through digital fabrication, translating the structural logic of chainmail into 3D-printed parametric components.",
     description: [
@@ -164,6 +197,7 @@ export const projects: Project[] = [
     year: 2022,
     location: "Philadelphia, USA",
     category: "Computational Tool",
+    tags: ["Computational", "Tool", "Lighting"],
     summary:
       "A Grasshopper plugin that generates instant artificial lighting guidance for architectural spaces — giving designers an immediate spatial sense of light distribution without leaving their modelling environment.",
     description: [
@@ -184,6 +218,7 @@ export const projects: Project[] = [
     year: 2023,
     location: "Philadelphia, USA",
     category: "Computational Analysis",
+    tags: ["Computational", "Analysis", "Sustainable"],
     summary:
       "A parametric lifecycle assessment of Amy Gutmann Hall at UPenn — Penn's largest building — using BHoM to quantify its embodied carbon and operational energy impact.",
     description: [

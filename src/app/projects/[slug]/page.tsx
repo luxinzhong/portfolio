@@ -1,9 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getProject, projects } from "@/data/projects";
 import Carousel from "@/components/Carousel";
+import SafeImage from "@/components/SafeImage";
 import { imgSrc } from "@/lib/imgSrc";
 
 export function generateStaticParams() {
@@ -65,14 +65,10 @@ export default async function ProjectPage({ params }: { params: Params }) {
         </div>
       ) : (
         <div className="mt-8 w-full bg-zinc-100 dark:bg-zinc-900">
-          <Image
+          <SafeImage
             src={imgSrc(coverImage)}
             alt={project.title}
-            width={0}
-            height={0}
-            sizes="100vw"
             className="h-auto w-full"
-            unoptimized
             priority
           />
         </div>
@@ -118,14 +114,10 @@ export default async function ProjectPage({ params }: { params: Params }) {
               key={i}
               className="mb-4 break-inside-avoid bg-zinc-100 dark:bg-zinc-900"
             >
-              <Image
+              <SafeImage
                 src={imgSrc(src)}
                 alt={`${project.title} — view ${carouselCount + i + 2}`}
-                width={0}
-                height={0}
-                sizes="(max-width: 640px) 100vw, 50vw"
                 className="h-auto w-full"
-                unoptimized
               />
             </div>
           ))}
